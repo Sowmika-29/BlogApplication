@@ -1,0 +1,39 @@
+.navbar_1{
+    height: 3.5rem;
+    font-size:2rem;
+    color: rgb(164, 25, 25);
+    background-color: rgba(245, 238, 238, 0.873);
+   
+}
+.blog::first-letter{
+    color: rgb(108, 0, 0);
+}
+.blog{
+    color: #dc7c7c; 
+  font-style:italic;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    margin-left: 880px;
+    height: 3rem;
+}
+.search{
+    top: 5px;
+    position: absolute;
+    right: 20px;
+    min-width: 15rem;
+}
+
+.mar{
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(205, 37, 37);
+    font-size: 16px;
+    padding: 1px;
+    margin: 0.7rem;
+    
+}
+.mar:hover{
+    color: rgb(65, 65, 65);
+}

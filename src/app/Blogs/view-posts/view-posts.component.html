@@ -1,0 +1,25 @@
+
+<section class="full">
+<h2>Authors</h2>
+<br>
+<section class="author">
+    <div class="row d-flex flex-wrap justify-content-start">
+      <div *ngFor="let item of userList; let i = index; trackBy: trackByFn" class="cardmain m-3 p-3 shadow" style="width: 25rem; border-radius: 15px;">
+        <img
+          [src]="item.photoUrl || 'assets\image\default.png'"
+          (error)="onImgError($event)"
+         
+          class="card-img-top rounded-circle mx-auto mt-3"
+          style="width: 100px; height: 100px; object-fit: cover;"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">{{ item.name }}</h5>
+          <h6 class="text-muted">{{ item.title }}</h6>
+          <p class="limit-text">{{ item.description }}</p>
+          <button [routerLink]="['/author', item.id]" class="btn-view">View more</button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  </section>

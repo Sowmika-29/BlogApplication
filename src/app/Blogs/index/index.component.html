@@ -1,0 +1,53 @@
+<section class="hero">
+
+    <div class="main">
+        <div>
+            <p>This project is a dynamic blogging platform where users can create and publish posts, <br>leave comments, and explore articles in real time.<br><br> It enables seamless interaction by updating content dynamically, fostering engagement<br> through discussions, and providing an intuitive interface<br> for both writers and readers.</p>
+
+            <a href="/add-post">
+                <button class="butt" >Click Here To Create Your Blog</button>
+            </a>
+            <br><br><br>
+            <a href="/view-posts">
+                <button class="butt">View Blog</button>
+            </a>
+        </div>
+    </div>
+
+</section>
+
+<section class="quotebox">
+<section class="box">
+<div class="bor p-4 p-md-5 mb-4  rounded  ">
+    <div class="col-md-6 px-0">
+        <h1 class="display-4 fst-italic">Words that inspire. Thoughts that connect.</h1>
+        <p class="lead my-3">This project is a dynamic blogging platform where users can create and publish posts, <br>leave
+            comments, and explore articles in real time.</p>
+        <p class="lead mb-0"><a href="/create-post" class="text-black fw-bold">Click Here To Create Your Blog</a></p>
+    </div>
+</div>
+</section>
+
+<section class="author">
+    <div class="row d-flex flex-wrap justify-content-start">
+      <div *ngFor="let item of userList; let i = index; trackBy: trackByFn" class="cardmain m-3 p-3 shadow" style="width: 40rem; border-radius: 15px;">
+        <img
+          [src]="item.photoUrl || 'assets\image\default.png'"
+          (error)="onImgError($event)"
+         
+          class="card-img-top rounded-circle mx-auto mt-3"
+          style="width: 150px; height: 150px; object-fit: cover;"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">{{ item.name }}</h5>
+          <h6 class="text-muted">{{ item.title }}</h6>
+          <p class="limit-text">{{ item.description }}</p>
+          <button [routerLink]="['/author', item.id]" class="btn-view">View more</button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  </section>
+
+

@@ -1,0 +1,33 @@
+.full{
+    background-color:white ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+H1{
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+.butt {
+    background-color: rgb(215, 197, 172);
+    margin-top: 4rem;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    min-width: 2rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.7s ease; 
+}
+
+.butt:hover {
+    transform: scale(1.1);
+    border-radius: 1rem;    
+}

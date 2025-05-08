@@ -1,0 +1,80 @@
+.full{
+  background-image: url('/assets/image/bg3.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+.author-section {
+  
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .author-card {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .author-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 15px 0;
+  }
+  .del{
+    background-color: white;
+    border: none;
+    border-radius: 0.5rem;
+
+  }
+ .like{
+  background-color: rgba(223, 185, 168, 0.711);
+  border: none;
+  border-radius: 0.5rem;
+  
+ }
+ .like:hover{
+  color: rgb(66, 62, 60);
+    background-color: rgb(240, 234, 231);
+    transform: scale(1.1);
+    border-radius: 0.3rem;
+    box-shadow: rgba(131, 3, 45, 0.586) 0px 0px 50px;
+ }
+
+  
+  .comments-section, .add-comment {
+    margin-top: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+  }
+  
+  .add-comment input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .add-comment button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .comment {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
